@@ -1,0 +1,15 @@
+// Mixin para transiciones
+@mixin transition($property, $duration: 0.3s, $timing-function: ease) {
+    transition: $property $duration $timing-function;
+  }
+  
+  // Mixin para enlaces personalizados
+  @mixin link-style($color: $primary-color) {
+    color: $color;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  

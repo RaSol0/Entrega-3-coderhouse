@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #FCDCBB;
+}
+
+section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #FCDCBB;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  color: #FCDCBB;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .nav-link {
+  position: relative;
+  color: #FCDCBB;
+  text-decoration: none;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #FCDCBB;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+.navbar .nav-link::after:hover, .navbar .nav-link::after.active {
+  width: 100%;
+}
+.navbar .navbar-nav .nav-link {
+  color: #FCDCBB !important;
+}
+
+.logo-reducido {
+  height: 22px;
+  width: auto;
+}
+
+.hero-section {
+  height: 75vh;
+  background-color: #121212;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-album-section {
+  height: 50vh;
+  background-image: url("assets/img/lanzamientos.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FCDCBB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.new-album-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.new-album-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.new-album-section .btn {
+  background-color: #000;
+  color: #FCDCBB;
+}
+
+#band-members img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 0;
+  border: none;
+  margin: auto;
+  display: block;
+}
+#band-members .col-md-4 {
+  text-align: center;
+}
+#band-members p,
+#band-members h3 {
+  color: #FCDCBB;
+  text-align: justify;
+}
+
+#tour {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#tour .card {
+  background-color: #121212;
+  border: none;
+  color: #FCDCBB;
+}
+
+.video-section {
+  background-color: #121212;
+  color: #fff;
+}
+.video-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #FCDCBB;
+}
+.video-section p {
+  color: white;
+}
+
+.merch-section {
+  background-color: #1c1c1c;
+}
+
+.footer {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer .footer-lines .line-top, .footer .footer-lines .line-bottom {
+  height: 4px;
+  background-color: #FCDCBB;
+  opacity: 1;
+  margin: 0;
+}
+.footer .footer-lines .line-top.line-top, .footer .footer-lines .line-bottom.line-top {
+  margin-bottom: 8px;
+}
+.footer .list-unstyled a {
+  color: #FCDCBB;
+  text-decoration: none;
+}
+.footer .list-unstyled a:hover {
+  text-decoration: underline;
+}
+.footer img {
+  max-width: 120px;
+}
+.footer p {
+  margin: 0;
+}
+.footer .logo-center {
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-custom {
+  background-color: transparent;
+  color: #FCDCBB;
+  border: 2px solid #FCDCBB;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #FCDCBB;
+  color: #000;
+}
+
+.modal-content {
+  background-color: #121212;
+  color: #FCDCBB;
+  border: none;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #FCDCBB;
+}
+
+.modal-body {
+  color: #FCDCBB;
+}
+
+.btn-close {
+  filter: invert(89%) sepia(12%) saturate(195%) hue-rotate(174deg) brightness(105%) contrast(98%);
+}
+
+/*# sourceMappingURL=style.css.map */

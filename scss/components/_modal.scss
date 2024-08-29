@@ -1,0 +1,23 @@
+// _modal.scss
+
+.modal-content {
+    background-color: $background-color; // Fondo del modal
+    color: $primary-color; // Color del texto en el modal
+    border: none; // Eliminar borde del modal
+}
+
+.modal-header, .modal-footer {
+    border: none; // Eliminar bordes de las secciones del header y footer
+}
+
+.modal-title {
+    color: $primary-color; // Color del título del modal
+}
+
+.modal-body {
+    color: $primary-color; // Color del texto en el cuerpo del modal
+}
+
+.btn-close {
+    filter: invert(89%) sepia(12%) saturate(195%) hue-rotate(174deg) brightness(105%) contrast(98%); // Cambiar color del botón de cierre
+}

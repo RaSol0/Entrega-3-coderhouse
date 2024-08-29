@@ -1,0 +1,36 @@
+.footer {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    .footer-lines {
+      .line-top, .line-bottom {
+        height: 4px;
+        background-color: $primary-color;
+        opacity: 1;
+        margin: 0;
+  
+        &.line-top {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  
+    .list-unstyled a {
+      @include link-style($primary-color);
+    }
+  
+    img {
+      max-width: 120px;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    .logo-center {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  

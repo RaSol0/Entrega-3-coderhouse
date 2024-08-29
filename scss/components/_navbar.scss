@@ -1,0 +1,36 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    .nav-link {
+      position: relative;
+      @include link-style($primary-color);
+  
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        bottom: -5px;
+        left: 0;
+        @include transition(width);
+  
+        &:hover,
+        &.active {
+          width: 100%;
+        }
+      }
+    }
+  
+    .navbar-nav .nav-link {
+      color: $primary-color !important;
+    }
+  }
+  
+  .logo-reducido {
+    height: 22px;
+    width: auto;
+  }
+  
